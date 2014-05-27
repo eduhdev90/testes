@@ -7,17 +7,24 @@
 	<link type="text/css" rel="stylesheet" href="formee-structure.css"/>
 	<link type="text/css" rel="stylesheet" href="formee-style.css"/>
 	<link type="text/css" rel="stylesheet" href="template.css" media="all">
+	<script>
+	
+	</script>
  </head>
 <body>
 <div class="container">
  <form class="formee" action="">
   <fieldset>
-   <legend>Solicitação de Compra</legend>
+   <legend>Solicitação&nbsp;de&nbsp;Compra</legend>
    		<ul class="desc_empresa">
-   			<li>Empresa:<p>$empresa</p></li>
-   			<li>Filial:<p>$filial</p></li>
-   			<li>Solicitação:<p>$solicitacao</p></li>
-   			<li>Requisitante:<p>$requisitante</p></li>
+   			<li>Empresa:</li>
+   			<li>$empresa</li>
+   			<li>Filial:</li>
+   			<li>$filial</li>
+   			<li>Solicitação:</li>
+   			<li>$solicitacao</li>
+   			<li>Requisitante:</li>
+   			<li>$requisitante</li>
    		</ul>
    		<input type="hidden" id="vl_total" name="vl_total" />
    		<div class="form_tbl">
@@ -50,7 +57,7 @@
 	              <input type="text" name="nm_um" value=""  readonly="readonly" class="formee-disabled"/>
 	        </div>
 	        <div class="grid-1-12 clear">
-	              <label>&Uacute;ltimo&nbsp;Preço</label>
+	              <label style="line-height: 1;padding: 3px 0 0 0;height: 32px;">&Uacute;ltimo Preço</label>
 	              <input type="text" name="vl_ultimoPreco" value=""  readonly="readonly" class="formee-disabled"/>
 	        </div>
 	        <div class="grid-2-12 clear">
@@ -64,7 +71,7 @@
         </div>
         <div id="accordion">
   			<h3 class="nl1">Aprovação Nível 1</h3>
-  			<div>
+  			<div class="conteudoAcordeao">
 		        <div class="grid-6-12">
 	                <label>Nome <em class="formee-req">*</em></label>
   		            <input type="text" name="nm_nomeAprovador1" value=""  readonly="readonly" class="formee-disabled"/>
@@ -76,17 +83,17 @@
 		        <div class="grid-12-12">
 		                <label>Aprovação <em class="formee-req">*</em></label>
 		                <ul class="formee-list">
-		                    <li onclick="motivoAceita()"><input name="solicitacao1" type="radio" value="true" /><label>Aprovado</label></li>
-		                    <li onclick="motivoRejeicao()"><input name="solicitacao1" type="radio" value="false" /><label>Rejeitado</label></li>
+		                    <li onclick="motivoAceita(1)"><input name="solicitacao1" type="radio" value="true" /><label>Aprovado</label></li>
+		                    <li onclick="motivoRejeicao(1)"><input name="solicitacao1" type="radio" value="false" /><label>Rejeitado</label></li>
 		                </ul>
 		        </div>
-		          <div style="display: none;" class="grid-5-12 clear motivo">
+		          <div style="display: none;" class="grid-5-12 clear motivo1">
 		              <label>Motivo</label>
 		              <textarea class="desc_motivo1" rows="" cols=""></textarea>
 		        </div>
   			</div>
   			<h3 class="nl2">Aprovação Nível 2</h3>
-  			<div>
+  			<div class="conteudoAcordeao">
 		        <div class="grid-6-12">
 	                <label>Nome <em class="formee-req">*</em></label>
   		            <input type="text" name="nm_nomeAprovador2" value=""  readonly="readonly" class="formee-disabled"/>
@@ -98,17 +105,17 @@
 		        <div class="grid-12-12">
 		                <label>Aprovação <em class="formee-req">*</em></label>
 		                <ul class="formee-list">
-		                    <li onclick="motivoAceita()"><input name="solicitacao2" type="radio" value="true"/><label>Aprovado</label></li>
-		                    <li onclick="motivoRejeicao()"><input name="solicitacao2" type="radio" value="false"/><label>Rejeitado</label></li>
+		                    <li onclick="motivoAceita(2)"><input name="solicitacao2" type="radio" value="true"/><label>Aprovado</label></li>
+		                    <li onclick="motivoRejeicao(2)"><input name="solicitacao2" type="radio" value="false"/><label>Rejeitado</label></li>
 		                </ul>
 		        </div>
-		          <div style="display: none;" class="grid-5-12 clear motivo">
+		          <div style="display: none;" class="grid-5-12 clear motivo2">
 		              <label>Motivo</label>
 		              <textarea class="desc_motivo2" rows="" cols=""></textarea>
 		        </div>
 		     </div>   
   			<h3 class="nl3">Aprovação Nível 3</h3>
-  			<div>
+  			<div class="conteudoAcordeao">
 		        <div class="grid-6-12">
 	                <label>Nome <em class="formee-req">*</em></label>
   		            <input type="text" name="nm_nomeAprovador3" value=""  readonly="readonly" class="formee-disabled"/>
@@ -120,17 +127,17 @@
 		        <div class="grid-12-12">
 		                <label>Aprovação Nível  <em class="formee-req">*</em></label>
 		                <ul class="formee-list">
-		                    <li onclick="motivoAceita()"><input name="solicitacao3" type="radio" value="true"/><label>Aprovado</label></li>
-		                    <li onclick="motivoRejeicao()"><input name="solicitacao3" type="radio" value="false"/><label>Rejeitado</label></li>
+		                    <li onclick="motivoAceita(3)"><input name="solicitacao3" type="radio" value="true"/><label>Aprovado</label></li>
+		                    <li onclick="motivoRejeicao(3)"><input name="solicitacao3" type="radio" value="false"/><label>Rejeitado</label></li>
 		                </ul>
 		        </div>
-		          <div style="display: none;" class="grid-5-12 clear motivo">
+		          <div style="display: none;" class="grid-5-12 clear motivo3">
 		              <label>Motivo</label>
-		              <textarea class="desc_motivo2" rows="" cols=""></textarea>
+		              <textarea class="desc_motivo3" rows="" cols=""></textarea>
 		        </div>
 		     </div>   
   			<h3 class="nl4">Aprovação Nível 4</h3>
-   			<div>
+   			<div class="conteudoAcordeao">
 		        <div class="grid-6-12">
 	                <label>Nome <em class="formee-req">*</em></label>
   		            <input type="text" name="nm_nomeAprovador4" value=""  readonly="readonly" class="formee-disabled"/>
@@ -142,17 +149,17 @@
 		        <div class="grid-12-12">
 		                <label>Aprovação Nível  <em class="formee-req">*</em></label>
 		                <ul class="formee-list">
-		                    <li onclick="motivoAceita()"><input name="solicitacao4" type="radio" value="true" /><label>Aprovado</label></li>
-		                    <li onclick="motivoRejeicao()"><input name="solicitacao4" type="radio" value="false" /><label>Rejeitado</label></li>
+		                    <li onclick="motivoAceita(4)"><input name="solicitacao4" type="radio" value="true" /><label>Aprovado</label></li>
+		                    <li onclick="motivoRejeicao(4)"><input name="solicitacao4" type="radio" value="false" /><label>Rejeitado</label></li>
 		                </ul>
 		        </div>
-		          <div style="display: none;" class="grid-5-12 clear motivo">
+		          <div style="display: none;" class="grid-5-12 clear motivo4">
 		              <label>Motivo</label>
-		              <textarea class="desc_motivo1" rows="" cols=""></textarea>
+		              <textarea class="desc_motivo4" rows="" cols=""></textarea>
 		        </div>
 		     </div>   
   			<h3 class="nl5">Aprovação Nível 5</h3>
-  			<div>
+  			<div class="conteudoAcordeao">
 		        <div class="grid-6-12">
 	                <label>Nome <em class="formee-req">*</em></label>
   		            <input type="text" name="nm_nomeAprovador5" value=""  readonly="readonly" class="formee-disabled"/>
@@ -164,13 +171,13 @@
 		        <div class="grid-12-12">
 		                <label>Aprovação Nível  <em class="formee-req">*</em></label>
 		                <ul class="formee-list">
-		                    <li onclick="motivoAceita()"><input name="solicitacao5" type="radio"  value="true"/><label>Aprovado</label></li>
-		                    <li onclick="motivoRejeicao()"><input name="solicitacao5" type="radio" value="false" /><label>Rejeitado</label></li>
+		                    <li onclick="motivoAceita(5)"><input name="solicitacao5" type="radio"  value="true"/><label>Aprovado</label></li>
+		                    <li onclick="motivoRejeicao(5)"><input name="solicitacao5" type="radio" value="false" /><label>Rejeitado</label></li>
 		                </ul>
 		        </div>
-		          <div style="display: none;" class="grid-5-12 clear motivo">
+		          <div style="display: none;" class="grid-5-12 clear motivo5">
 		              <label>Motivo</label>
-		              <textarea class="desc_motivo1" rows="" cols=""></textarea>
+		              <textarea class="desc_motivo5" rows="" cols=""></textarea>
 		        </div>
   		</div>
   		</div>

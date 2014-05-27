@@ -16,7 +16,7 @@
 	<script>
 	$(function() {
 		if ( !$( "<canvas>" )[0].getContext ) {
-			$( "<div>" ).text(
+			$( "<div class="conteudoAcordeao">" ).text(
 				"Your browser doesn't support canvas, which is required for this demo."
 			).appendTo( "#graphs" );
 			return;
@@ -27,9 +27,9 @@
 			height = 100;
 
 		$.each( $.easing, function( name, impl ) {
-			var graph = $( "<div>" ).addClass( "graph" ).appendTo( "#graphs" ),
-				text = $( "<div>" ).text( ++i + ". " + name ).appendTo( graph ),
-				wrap = $( "<div>" ).appendTo( graph ).css( 'overflow', 'hidden' ),
+			var graph = $( "<div class="conteudoAcordeao">" ).addClass( "graph" ).appendTo( "#graphs" ),
+				text = $( "<div class="conteudoAcordeao">" ).text( ++i + ". " + name ).appendTo( graph ),
+				wrap = $( "<div class="conteudoAcordeao">" ).appendTo( graph ).css( 'overflow', 'hidden' ),
 				canvas = $( "<canvas>" ).appendTo( wrap )[ 0 ];
 
 			canvas.width = width;

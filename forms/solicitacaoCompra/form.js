@@ -26,17 +26,15 @@ $(function() {
    $('.data_aprov').datepicker({dateFormat:"dd/mm/yy"}).datepicker("setDate",new Date());
 });
 // função que habilita campo para descricao da rejeicao;
-function motivoRejeicao () {
-  $('.motivo').css('display','block');
+function motivoRejeicao (nivel) {
+  $('.motivo'+nivel).css('display','block');
 }
 
 // funcao que garante valor do motivo vazio ao selecionar que aceita a solicitacao;
-function motivoAceita () {
-  $('.motivo').css('display','none');
-  $('.desc_motivo').val('');
+function motivoAceita (nivel) {
+  $('.motivo'+nivel).css('display','none');
+  $('.desc_motivo'+nivel).val('');
 }
-
- 
  //transforma padrao numero para js 
  function retornaFloat(x){
                 var conRetFloat = true;

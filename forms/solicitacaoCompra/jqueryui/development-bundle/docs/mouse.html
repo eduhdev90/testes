@@ -30,23 +30,23 @@
 <p class="desc"><strong>Description: </strong>The base interaction layer.</p>
 <Aprovação Nível id="quick-nav"><header><h2>QuickNav</h2></header><div class="quick-nav-Aprovação Nível">
 <h3>Options</h3>
-<div><a href="#option-cancel">cancel</a></div>
-<div><a href="#option-delay">delay</a></div>
-<div><a href="#option-distance">distance</a></div>
+<div class="conteudoAcordeao"><a href="#option-cancel">cancel</a></div>
+<div class="conteudoAcordeao"><a href="#option-delay">delay</a></div>
+<div class="conteudoAcordeao"><a href="#option-distance">distance</a></div>
 </div>
 <div class="quick-nav-Aprovação Nível">
 <h3>Methods</h3>
-<div><a href="#method-_mouseCapture">_mouseCapture</a></div>
-<div><a href="#method-_mouseDelayMet">_mouseDelayMet</a></div>
-<div><a href="#method-_mouseDestroy">_mouseDestroy</a></div>
-<div><a href="#method-_mouseDistanceMet">_mouseDistanceMet</a></div>
-<div><a href="#method-_mouseDown">_mouseDown</a></div>
-<div><a href="#method-_mouseDrag">_mouseDrag</a></div>
-<div><a href="#method-_mouseInit">_mouseInit</a></div>
-<div><a href="#method-_mouseMove">_mouseMove</a></div>
-<div><a href="#method-_mouseStart">_mouseStart</a></div>
-<div><a href="#method-_mouseStop">_mouseStop</a></div>
-<div><a href="#method-_mouseUp">_mouseUp</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseCapture">_mouseCapture</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseDelayMet">_mouseDelayMet</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseDestroy">_mouseDestroy</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseDistanceMet">_mouseDistanceMet</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseDown">_mouseDown</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseDrag">_mouseDrag</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseInit">_mouseInit</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseMove">_mouseMove</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseStart">_mouseStart</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseStop">_mouseStop</a></div>
+<div class="conteudoAcordeao"><a href="#method-_mouseUp">_mouseUp</a></div>
 </div>
 <div class="quick-nav-Aprovação Nível"><h3>Events</h3></div></Aprovação Nível><div class="longdesc" id="entry-longdesc">
 		<p>Similar to <a href="/jQuery.Widget#jQuery-Widget2"><code>jQuery.Widget</code></a>, the mouse interaction is not intended to be used directly. It is purely a base layer for other widgets to inherit from. This page only documents what is added to <code>jQuery.Widget</code>, but it does include internal methods that are not intended to be overwritten. The intended public API is <a href="#method-_mouseStart"><code>_mouseStart()</code></a>, <a href="#method-_mouseDrag"><code>_mouseDrag()</code></a>, <a href="#method-_mouseStop"><code>_mouseStop()</code></a>, and <a href="#method-_mouseCapture"><code>_mouseCapture()</code></a>.</p>
@@ -62,7 +62,7 @@
 <div class="default">
 <strong>Default: </strong><code>"input,textarea,button,select,option"</code>
 </div>
-<div>Prevents interactions from starting on specified elements.</div>
+<div class="conteudoAcordeao">Prevents interactions from starting on specified elements.</div>
 <strong>Code examples:</strong><p>Initialize the mouse with the <code>cancel</code> option specified:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -114,7 +114,7 @@
 <div class="default">
 <strong>Default: </strong><code>0</code>
 </div>
-<div>Time in milliseconds after mousedown until the interaction should start. This option can be used to prevent unwanted interactions when clicking on an element.</div>
+<div class="conteudoAcordeao">Time in milliseconds after mousedown until the interaction should start. This option can be used to prevent unwanted interactions when clicking on an element.</div>
 <strong>Code examples:</strong><p>Initialize the mouse with the <code>delay</code> option specified:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -166,7 +166,7 @@
 <div class="default">
 <strong>Default: </strong><code>1</code>
 </div>
-<div>Distance in pixels after mousedown the mouse must move before the interaction should start. This option can be used to prevent unwanted interactions when clicking on an element.</div>
+<div class="conteudoAcordeao">Distance in pixels after mousedown the mouse must move before the interaction should start. This option can be used to prevent unwanted interactions when clicking on an element.</div>
 <strong>Code examples:</strong><p>Initialize the mouse with the <code>distance</code> option specified:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -214,11 +214,11 @@
 </div></Aprovação Nível><Aprovação Nível id="methods"><header><h2>Methods</h2></header><div id="method-_mouseCapture"><div class="api-item first-item">
 <h3>_mouseCapture()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				Determines whether an interaction should start based on event target of the interaction. The default implementation always returns <code>true</code>.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseCapture method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -242,11 +242,11 @@
 <div id="method-_mouseDelayMet"><div class="api-item">
 <h3>_mouseDelayMet()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				Determines whether the <a href="#option-delay"><code>delay</code></a> option has been met for the current interaction.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseDelayMet method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -270,11 +270,11 @@
 <div id="method-_mouseDestroy"><div class="api-item">
 <h3>_mouseDestroy()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				Destroys the interaction event handlers. This must be called from the extending widget's <code>_destroy()</code> method.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseDestroy method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -298,11 +298,11 @@
 <div id="method-_mouseDistanceMet"><div class="api-item">
 <h3>_mouseDistanceMet()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#Boolean">Boolean</a></span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				Determines whether the <a href="#option-distance"><code>distance</code></a> option has been met for the current interaction.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseDistanceMet method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -326,11 +326,11 @@
 <div id="method-_mouseDown"><div class="api-item">
 <h3>_mouseDown()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				Handles the beginning of an interaction. Verifies that the event is associated with the primary mouse button and ensures that the <a href="#option-delay"><code>delay</code></a> and <a href="#option-distance"><code>distance</code></a> options are met prior to starting the interaction. When the interaction is ready to start, invokes the <a href="#method-_mouseStart"><code>_mouseStart()</code></a> method for the extending widget to handle.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseDown method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -354,11 +354,11 @@
 <div id="method-_mouseDrag"><div class="api-item">
 <h3>_mouseDrag()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				The extending widget should implement a <code>_mouseDrag()</code> method to handle each movement of an interaction. This method will receive the mouse event associated with the movement.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseDrag method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -382,11 +382,11 @@
 <div id="method-_mouseInit"><div class="api-item">
 <h3>_mouseInit()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				Initializes the interaction event handlers. This must be called from the extending widget's <code>_create()</code> method.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseInit method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -410,11 +410,11 @@
 <div id="method-_mouseMove"><div class="api-item">
 <h3>_mouseMove()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				Handles each movement of the interaction. Invokes the <a href="#method-_mouseDrag"><code>mouseDrag()</code></a> method for the extending widget to handle.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseMove method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -438,11 +438,11 @@
 <div id="method-_mouseStart"><div class="api-item">
 <h3>_mouseStart()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				The extending widget should implement a <code>_mouseStart()</code> method to handle the beginning of an interaction. This method will receive the mouse event associated with the start of the interaction.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseStart method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -466,11 +466,11 @@
 <div id="method-_mouseStop"><div class="api-item">
 <h3>_mouseStop()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				The extending widget should implement a <code>_mouseStop()</code> method to handle the end of an interaction. This method will receive the mouse event associated with the end of the interaction.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseStop method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>
@@ -494,11 +494,11 @@
 <div id="method-_mouseUp"><div class="api-item">
 <h3>_mouseUp()<span class="returns">Returns: <a href="http://api.jquery.com/Types/#jQuery">jQuery</a> (<a href="http://learn.jquery.com/jquery-ui/widget-factory/widget-method-invocation/">plugin only</a>)</span>
 </h3>
-<div>
+<div class="conteudoAcordeao">
 				Handles the end of the interaction. Invokes the <a href="#method-_mouseStop"><code>mouseStop()</code></a> method for the extending widget to handle.
 			</div>
 <ul><li><div class="null-signature">This method does not accept any arguments.</div></li></ul>
-<div>
+<div class="conteudoAcordeao">
 <strong>Code examples:</strong><p>Invoke the _mouseUp method:</p>
 <div class="syntaxhighlighter javascript nogutter">
 	<table>

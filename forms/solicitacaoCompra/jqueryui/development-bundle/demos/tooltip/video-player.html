@@ -43,7 +43,7 @@
 	$(function() {
 		function notify( input ) {
 			var msg = "Selected " + $.trim( input.data( "tooltip-title" ) || input.text() );
-			$( "<div>" )
+			$( "<div class="conteudoAcordeao">" )
 				.appendTo( document.body )
 				.text( msg )
 				.addClass( "notification ui-state-default ui-corner-bottom" )
